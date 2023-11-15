@@ -5,6 +5,7 @@ import GearItem from "./GearItem";
 import Slider from "./Slider";
 import LargeSlider from "./LargeSlider";
 import ImageWithSingleBtn from "./ImageWithSingleBtn";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -38,12 +39,14 @@ const Home = () => {
             </a>
           </div>
           <div id="item" className="grid grid-cols-3 gap-5 py-8">
+            <NavLink to="items">
             <Cetagories
               text={"Most-Wanted Styles"}
               img={
                 "https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/w_383,c_limit/555b9dfd-2687-4b25-987b-4a9f51d83062/image.png"
               }
             />
+            </NavLink>
             <Cetagories
               text={"Accessories"}
               img={

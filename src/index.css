@@ -7,14 +7,14 @@
 }
 
 #slider {
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   overflow: scroll hidden;
   gap: 1.5rem;
   scroll-behavior: smooth;
 }
 
 .opacity6 {
-  opacity: .6;
+  opacity: 0.6;
 }
 .opacity6:hover {
   opacity: 1;
@@ -29,8 +29,31 @@
 }
 .media i:hover {
   background-color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
 .hov li:hover {
   color: #fff;
+}
+.tracking-wide:hover{
+  color: rgb(13, 42, 42);
+  transition: .5s;
+}
+.tracking-wide:hover .sub-header {
+  display: block;
+ transition: .5s top;
+}
+.tracking-wide{
+  height: 100%;
+}
+
+.sub-header {
+  display: none;
+  position: absolute;
+  right: 0;
+  height: 450px;
+  width: 100%;
+  background-color: white;
+  color: #000;
+  padding: 2vw 8vw;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
