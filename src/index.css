@@ -13,3 +13,24 @@
   scroll-behavior: smooth;
 }
 
+.opacity6 {
+  opacity: .6;
+}
+.opacity6:hover {
+  opacity: 1;
+}
+
+.media i {
+  font-size: 1.6rem;
+  color: black;
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 50px;
+}
+.media i:hover {
+  background-color: #fff;
+  transition: .3s;
+}
+.hov li:hover {
+  color: #fff;
+}
