@@ -3,6 +3,8 @@ import Cetagories from "./Cetagories";
 import ItemWithBtn from "./ItemWithBtn";
 import GearItem from "./GearItem";
 import Slider from "./Slider";
+import LargeSlider from "./LargeSlider";
+import ImageWithSingleBtn from "./ImageWithSingleBtn";
 
 const Home = () => {
   return (
@@ -124,7 +126,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div id="dont-miss">
+        <div id="dont-miss" className="pt-6">
           <h2 className="text-2xl text-start font-medium py-5">Don't Miss</h2>
           <div className=" grid grid-cols-2 gap-5">
             <ItemWithBtn
@@ -146,8 +148,51 @@ const Home = () => {
           </div>
         </div>
 
-        <div id="slider">
+        <div id="slider" className="py-10">
+          <h2 className="text-2xl text-start font-medium py-5">
+            Always Iconic
+          </h2>
           <Slider />
+        </div>
+
+        <div id="slider" className="">
+          <h2 className="text-2xl text-start font-medium py-5">
+            Shop by Sport
+          </h2>
+          <div id="slider" className="flex">
+            <LargeSlider
+              img={
+                "https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/w_383,c_limit/a51d84b2-282a-44d6-957d-aa57473ed73d/nike-just-do-it.jpg"
+              }
+              title={"Nike Basketball"}
+              p={"Styles made for your game."}
+            />
+            <LargeSlider
+              img={
+                "https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/w_383,c_limit/0376dfa6-a2d7-4867-bd13-4b8e465705c1/nike-just-do-it.jpg"
+              }
+              title={"Nike Golf"}
+              p={"Conquer any course in style."}
+            />
+            <LargeSlider
+              img={
+                "https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/w_383,c_limit/3df1f8e5-5ece-4e81-87e6-f8a30c8a3fab/nike-just-do-it.jpg"
+              }
+              title={"Nike Trail"}
+              p={"Gear that leads to wild places."}
+            />
+          </div>
+        </div>
+
+        <div id="essentials" className="py-10">
+          <h2 className="text-2xl text-start font-medium py-5">
+            Shop by Sport
+          </h2>
+          <div className="grid grid-cols-3 gap-5 py-4">
+          <ImageWithSingleBtn img={"https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/h_540,c_limit/5e9d47e4-d0af-4cfe-a40a-31729d9d2ce4/nike-just-do-it.png"} shop={"Men's"}/>
+          <ImageWithSingleBtn img={"https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/h_540,c_limit/963a54ad-6b91-4efe-8927-217656eb5240/nike-just-do-it.png"} shop={"Women's"}/>
+          <ImageWithSingleBtn img={"https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/h_540,c_limit/e11e868d-e199-40fa-828c-a4e19c9b6943/nike-just-do-it.png"} shop={"Kids's"} />
+        </div>
         </div>
       </div>
     </div>

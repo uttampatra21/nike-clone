@@ -1,6 +1,7 @@
 *::-webkit-scrollbar {
   display: none;
 }
+
 .w05px {
   width: 1.5px;
 }
@@ -11,3 +12,4 @@
   gap: 1.5rem;
   scroll-behavior: smooth;
 }
+
