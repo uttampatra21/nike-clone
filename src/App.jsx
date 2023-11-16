@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Main from "./components/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,7 +20,15 @@ function App() {
         >
           <Route path="*" element={<></>} />
         </Route>
-        <Route path="items" element={<></>} />
+        <Route
+          path="items"
+          element={
+            <>
+              <Header />
+              <Main />
+            </>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
