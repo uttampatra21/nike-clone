@@ -59,14 +59,15 @@
 }
 
 .main {
-  height: 100vh;
+  height: 90vh;
   overflow: auto;
+
   grid-template-columns: 25% 75%;
 }
 
 #sidebar {
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
 }
 #product-item:hover #produt-detls {
   display: none;
@@ -81,6 +82,7 @@
 }
 
 #product-item {
+  overflow: scroll;
   width: 330px;
   margin-bottom: 3rem;
 }

@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Search from "./Search";
 
 const Header = () => {
+  const [search, setSearch] = useState();
+  const [top, setTop] = useState("-500px");
+
+  const searchBtn = () => {
+    setTop("0px");
+    setSearch(<Search top={top} setTop={setTop} />);
+  };
+
   return (
-    <div>
+    <div className="relative">
+      <div>{search}</div>
       <div
         id="mini-header"
         className="flex justify-between pl-16 pr-16 py-2 bg-slate-100"
@@ -324,6 +334,7 @@ const Header = () => {
           <li className="px-2 flex gap-3 items-center border-2 rounded-full">
             <i className="bx bx-search text-3xl opacity-50"></i>{" "}
             <input
+              onChange={searchBtn}
               className="border-0 text-xl w-36 outline-0 bg-inherit"
               type="text"
               placeholder="Search"
