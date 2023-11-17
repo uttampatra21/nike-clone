@@ -344,7 +344,9 @@ const Header = () => {
             <i className="bx bx-heart text-3xl"></i>
           </li>
           <li>
-            <i className="bx bx-shopping-bag text-3xl"></i>
+            <NavLink to="bag">
+              <i className="bx bx-shopping-bag text-3xl"></i>
+            </NavLink>
           </li>
         </ul>
       </div>

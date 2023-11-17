@@ -1,3 +1,4 @@
+import Bag from "./components/Bag";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -26,6 +27,14 @@ function App() {
             <>
               <Header />
               <Main />
+            </>
+          }
+        />
+        <Route
+          path="bag"
+          element={
+            <>
+              <Bag />
             </>
           }
         />
